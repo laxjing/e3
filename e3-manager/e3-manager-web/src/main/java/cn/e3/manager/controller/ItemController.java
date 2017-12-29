@@ -12,7 +12,7 @@ import cn.e3.pojo.TbItem;
 public class ItemController {
 	@Autowired
 	private ItemService itemService;
-	@RequestMapping("find/{itemId}")
+	@RequestMapping("item/{itemId}")
 	public TbItem findItemById(@PathVariable long itemId){
 		TbItem item = itemService.findItemById(itemId);
 		return item;
